@@ -114,7 +114,7 @@ module.exports.onStart = async ({ api, event, args, usersData }) => {
 
   } catch (error) {
     console.error(error);
-    return api.sendMessage("An error occurred. Check the console for details.", event.threadID, event.messageID);
+    return api.sendMessage("", event.threadID, event.messageID);
   }
 };
 
