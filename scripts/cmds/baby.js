@@ -134,7 +134,7 @@ module.exports.onChat = async ({ api, event,message }) => {
     const body = event.body ? event.body.toLowerCase() : ""
     if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("janu")){
       const arr = body.replace(/^\S+\s*/, "")
-      if(!arr){ api.sendMessage("𝗵𝗲𝗮 𝗯𝗮𝗯𝘆", "ki hoice ato dakoken",event.threadID, (error, info) => {
+      if(!arr){ api.sendMessage("𝗵𝗲𝗮 𝗯𝗮𝗯𝘆" " KI hoise", "ki hoice ato dakoken",event.threadID, (error, info) => {
       global.GoatBot.onReply.set(info.messageID, {
         commandName: this.config.name,
         type: "reply",
