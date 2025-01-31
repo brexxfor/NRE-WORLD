@@ -126,7 +126,7 @@ module.exports.onReply = async ({ api, event, Reply }) => {
     api.sendMessage(response.data.reply, event.threadID, event.messageID);
   } catch (error) {
     console.error(error);
-    return api.sendMessage("Error baby 🥺🥺", event.threadID, event.messageID);
+    return api.sendMessage("", event.threadID, event.messageID);
   }
 };
 module.exports.onChat = async ({ api, event,message }) => {
