@@ -4,7 +4,7 @@ module.exports = {
     version: "1.0",
     author: "Xemon",
     role: 2,
-    category: "texts",
+    category: "owner",
     guide: {
       vi: "Not Available",
       en: "cpx @(mention)"
@@ -13,7 +13,7 @@ module.exports = {
 
   onStart: async function ({ api, event, userData, args }) {
       var mention = Object.keys(event.mentions)[0];
-    if(!mention) return api.sendMessage("Need to tag 1 friend whome you want to scold with bad words", event.threadID);
+    if(!mention) return api.sendMessage("boss just akbar bolen kon khankir pola re khaiya dimu 🥵🥱 ", event.threadID);
  let name =  event.mentions[mention];
     var arraytag = []; 
         arraytag.push({id: mention, tag: name});
