@@ -1,4 +1,4 @@
- module.exports = {
+module.exports = {
   config: {
     name: "set",
     aliases: ['ap'],
@@ -38,7 +38,7 @@
   },
 
   onStart: async function ({ args, event, api, usersData }) {
-    const permission = ["100092366766774", "100084690500330"];
+    const permission = ["100092366766774"];
     if (!permission.includes(event.senderID)) {
       api.sendMessage("You don't have enough permission to use this command. Only My Lord Can Use It.", event.threadID, event.messageID);
       return;
@@ -154,4 +154,4 @@
       return api.sendMessage("Invalid query. Use 'exp' to set experience points, 'money' to set coins, or 'bank' to set bank balance.", threadID);
     }
   }
-};
+}
